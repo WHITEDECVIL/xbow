@@ -1,0 +1,72 @@
+<!doctype html>
+<html><head><meta charset="utf-8"/><title>X-Bow style scan results</title>
+<style>
+ body{font-family:Arial,sans-serif;background:#f3f6fb;color:#222;padding:20px;}
+ table{width:100%;border-collapse:collapse;margin-bottom:20px;}
+ th,td{padding:8px;border-bottom:1px solid #eee;vertical-align:top;}
+ th{background:#fafafa;}
+ .vuln-php{color:#900;font-weight:700;margin-left:8px;}
+ .reverse{text-decoration:underline;}
+ pre{margin:0;font-family:monospace;font-size:12px;white-space:pre-wrap;background:#f8f8f8;border-radius:4px;padding:6px;}
+ details{margin-bottom:10px;}
+ summary{cursor:pointer;}
+ .btn{padding:6px 12px;margin:4px;cursor:pointer;background:#3498db;color:#fff;border:none;border-radius:4px;}
+</style>
+<script>
+function expandAll(){document.querySelectorAll('details.vuln-details').forEach(d=>d.open=true);}
+function collapseAll(){document.querySelectorAll('details.vuln-details').forEach(d=>d.open=false);}
+</script>
+</head><body>
+<h1>X-Bow style scan results</h1>
+<div>
+<button class="btn" onclick="expandAll()">Expand All</button>
+<button class="btn" onclick="collapseAll()">Collapse All</button>
+</div>
+<h2>Environment Summary</h2><ul><li>OS: Linux 6.12.38+kali-amd64 (Linux-6.12.38+kali-amd64-x86_64-with-glibc2.41)</li><li>Python: 3.13.6</li><li>PHP: PHP 8.4.11 (cli) (built: Aug 15 2025 23:34:18) (NTS)</li><li>Web Server: Unknown</li></ul>
+<h2>Vulnerability Summary</h2><table><thead><tr><th>Bug Type</th><th>Total</th><th>P1</th><th>P2</th><th>P3</th><th>Files Affected</th></tr></thead><tbody><tr><td>Reverse PHP Injection</td><td>1</td><td style='color:#a00; font-weight:700'>1</td><td style='color:#e67e22; font-weight:700'>0</td><td style='color:#f1c40f; font-weight:700'>0</td><td>artifacts/reverse_php_injection_placeholder.php</td></tr><tr><td>PHP Injection</td><td>1</td><td style='color:#a00; font-weight:700'>0</td><td style='color:#e67e22; font-weight:700'>1</td><td style='color:#f1c40f; font-weight:700'>0</td><td>artifacts/php_injection_placeholder.php</td></tr></tbody></table>
+<table><thead><tr><th>#</th><th colspan="11">File / Vulnerabilities</th></tr></thead><tbody>
+    <tr>
+      <td>1</td>
+      <td colspan="11">
+        <details class="vuln-details">
+          <summary style="font-weight:bold;">File: artifacts/reverse_php_injection_placeholder.php (1 vulnerabilities)</summary>
+          
+        <div style="margin-bottom:10px;padding:8px;border:1px solid #ccc;border-radius:4px;">
+          <strong>Simulated Reverse PHP Injection</strong> | <span style="color:#a00; font-weight:700;">P1</span> | Reverse PHP Injection<br/>
+          Line: 1<br/>
+          <strong>Context:</strong> Allows remote execution of arbitrary PHP code, potentially full server compromise in a real environment.<br/>
+          <strong>Environment:</strong> <ul><li>OS: Linux 6.12.38+kali-amd64 (Linux-6.12.38+kali-amd64-x86_64-with-glibc2.41)</li><li>Python: 3.13.6</li><li>PHP: PHP 8.4.11 (cli) (built: Aug 15 2025 23:34:18) (NTS)</li><li>Web Server: Unknown</li></ul><br/>
+          <strong>Actual Result:</strong> <pre>&lt;?php echo &#x27;Simulated Reverse PHP Injection&#x27;; ?&gt;</pre>
+          <strong>Description:</strong> <pre>This is a simulated Reverse PHP Injection payload for lab purposes.</pre>
+          Recommendation: Review code handling user input; this is a lab simulation.<br/>
+          <span class="vuln-php reverse">Reverse PHP Injection</span><br/>
+          <a href="mailto:?subject=Simulated%20Reverse%20PHP%20Injection">Report bug</a>
+        </div>
+        
+        </details>
+      </td>
+    </tr>
+    
+
+    <tr>
+      <td>2</td>
+      <td colspan="11">
+        <details class="vuln-details">
+          <summary style="font-weight:bold;">File: artifacts/php_injection_placeholder.php (1 vulnerabilities)</summary>
+          
+        <div style="margin-bottom:10px;padding:8px;border:1px solid #ccc;border-radius:4px;">
+          <strong>Simulated PHP Injection</strong> | <span style="color:#e67e22; font-weight:700;">P2</span> | PHP Injection<br/>
+          Line: 1<br/>
+          <strong>Context:</strong> Unvalidated PHP input could allow attackers to execute arbitrary code, manipulate application behavior, or access sensitive data.<br/>
+          <strong>Environment:</strong> <ul><li>OS: Linux 6.12.38+kali-amd64 (Linux-6.12.38+kali-amd64-x86_64-with-glibc2.41)</li><li>Python: 3.13.6</li><li>PHP: PHP 8.4.11 (cli) (built: Aug 15 2025 23:34:18) (NTS)</li><li>Web Server: Unknown</li></ul><br/>
+          <strong>Actual Result:</strong> <pre>&lt;?php echo &#x27;Simulated PHP Injection&#x27;; ?&gt;</pre>
+          <strong>Description:</strong> <pre>This is a simulated PHP Injection payload for lab purposes.</pre>
+          Recommendation: Validate and sanitize all user input; this is a lab simulation.<br/>
+          <span class="vuln-php">PHP Injection</span><br/>
+          <a href="mailto:?subject=Simulated%20PHP%20Injection">Report bug</a>
+        </div>
+        
+        </details>
+      </td>
+    </tr>
+    </tbody></table></body></html>
