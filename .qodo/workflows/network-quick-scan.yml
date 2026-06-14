@@ -1,0 +1,41 @@
+name: Quick Network Scan
+description: Rapid network scanning workflow
+version: 1.0.0
+enabled: true
+trigger:
+  type: manual
+  schedule: null
+
+steps:
+  - id: step_1_network_quick
+    name: Quick Network Scan
+    module: scanner.network
+    timeout: 600
+    config:
+      ping_sweep: true
+      port_scan: true
+      service_detection: true
+      os_detection: false
+      port_range: "1-1000"
+      threads: 8
+    on_success: step_2_report
+    on_failure: abort
+
+  - id: step_2_report
+    name: Quick Report
+    module: reporting.html_report
+    timeout: 300
+    config:
+      formats: ["html", "json"]
+      include_remediation: false
+      include_charts: true
+    on_success: complete
+    on_failure: generate_partial
+
+timeout_total: 1200
+retry_policy:
+  max_retries: 1
+  backoff_multiplier: 1.0
+notifications:
+  on_success: false
+  on_failure: true

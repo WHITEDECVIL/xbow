@@ -1,0 +1,58 @@
+name: Continuous Security Monitoring
+description: Scheduled continuous monitoring workflow
+version: 1.0.0
+enabled: true
+trigger:
+  type: scheduled
+  schedule: "0 */4 * * *"  # Every 4 hours
+
+steps:
+  - id: step_1_baseline_check
+    name: Baseline Network Check
+    module: scanner.network
+    timeout: 1800
+    config:
+      ping_sweep: true
+      port_scan: true
+      service_detection: true
+      port_range: "1-1000"
+      threads: 4
+    on_success: step_2_changes_detect
+    on_failure: notify_admin
+
+  - id: step_2_changes_detect
+    name: Change Detection
+    module: utils.change_detector
+    timeout: 300
+    config:
+      compare_with_baseline: true
+      alert_on_changes: true
+      changes_threshold: 1
+    on_success: step_3_alerts
+    on_failure: skip
+
+  - id: step_3_alerts
+    name: Generate Alerts
+    module: reporting.alerter
+    timeout: 300
+    config:
+      alert_channels: ["email", "log"]
+      alert_severity: "medium"
+    on_success: complete
+    on_failure: log_error
+
+  - id: notify_admin
+    name: Notify Administrator
+    module: reporting.notifier
+    timeout: 60
+    config:
+      channels: ["email"]
+      recipients: ["admin@xbow.local"]
+
+timeout_total: 3600
+retry_policy:
+  max_retries: 2
+  backoff_multiplier: 2.0
+notifications:
+  on_success: false
+  on_failure: true

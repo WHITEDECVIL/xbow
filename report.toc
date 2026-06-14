@@ -1,0 +1,214 @@
+\contentsline {chapter}{\numberline {1}Introduction}{8}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Project Overview}{8}{section.1.1}%
+\contentsline {section}{\numberline {1.2}Objectives}{8}{section.1.2}%
+\contentsline {section}{\numberline {1.3}Scope and Limitations}{8}{section.1.3}%
+\contentsline {subsection}{\numberline {1.3.1}Scope}{8}{subsection.1.3.1}%
+\contentsline {subsection}{\numberline {1.3.2}Limitations}{9}{subsection.1.3.2}%
+\contentsline {section}{\numberline {1.4}Organization of the Report}{9}{section.1.4}%
+\contentsline {chapter}{\numberline {2}Literature Review}{10}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Penetration Testing Tools}{10}{section.2.1}%
+\contentsline {subsection}{\numberline {2.1.1}Nmap}{10}{subsection.2.1.1}%
+\contentsline {subsection}{\numberline {2.1.2}Metasploit Framework}{10}{subsection.2.1.2}%
+\contentsline {subsection}{\numberline {2.1.3}Burp Suite}{10}{subsection.2.1.3}%
+\contentsline {subsection}{\numberline {2.1.4}Wireshark}{11}{subsection.2.1.4}%
+\contentsline {section}{\numberline {2.2}AI in Cybersecurity}{11}{section.2.2}%
+\contentsline {subsection}{\numberline {2.2.1}Machine Learning for Vulnerability Detection}{11}{subsection.2.2.1}%
+\contentsline {subsubsection}{Studies on ML-based Vulnerability Classification}{11}{section*.4}%
+\contentsline {subsubsection}{Applications in Penetration Testing}{11}{section*.5}%
+\contentsline {subsection}{\numberline {2.2.2}AI-Powered Security Tools}{11}{subsection.2.2.2}%
+\contentsline {subsubsection}{Darktrace}{11}{section*.6}%
+\contentsline {subsubsection}{CrowdStrike Falcon}{12}{section*.7}%
+\contentsline {section}{\numberline {2.3}Open-Source Penetration Testing Frameworks}{12}{section.2.3}%
+\contentsline {subsection}{\numberline {2.3.1}Kali Linux}{12}{subsection.2.3.1}%
+\contentsline {subsection}{\numberline {2.3.2}OWASP ZAP}{12}{subsection.2.3.2}%
+\contentsline {section}{\numberline {2.4}Gap Analysis}{12}{section.2.4}%
+\contentsline {chapter}{\numberline {3}System Analysis and Design}{14}{chapter.3}%
+\contentsline {section}{\numberline {3.1}System Requirements}{14}{section.3.1}%
+\contentsline {subsection}{\numberline {3.1.1}Functional Requirements}{14}{subsection.3.1.1}%
+\contentsline {subsubsection}{Scanning Requirements}{14}{section*.8}%
+\contentsline {subsubsection}{Analysis Requirements}{14}{section*.9}%
+\contentsline {subsubsection}{User Interface Requirements}{14}{section*.10}%
+\contentsline {subsection}{\numberline {3.1.2}Non-Functional Requirements}{14}{subsection.3.1.2}%
+\contentsline {subsubsection}{Performance Requirements}{14}{section*.11}%
+\contentsline {subsubsection}{Security Requirements}{15}{section*.12}%
+\contentsline {subsubsection}{Usability Requirements}{15}{section*.13}%
+\contentsline {section}{\numberline {3.2}System Architecture}{15}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}Overall Architecture}{15}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {3.2.2}Module Design}{16}{subsection.3.2.2}%
+\contentsline {subsubsection}{Scanner Module}{16}{section*.14}%
+\contentsline {subsubsection}{AI Engine Module}{17}{section*.15}%
+\contentsline {subsubsection}{Reporting Module}{17}{section*.16}%
+\contentsline {subsubsection}{Utility Module}{17}{section*.17}%
+\contentsline {section}{\numberline {3.3}Data Flow Diagrams}{18}{section.3.3}%
+\contentsline {subsection}{\numberline {3.3.1}Level 0 DFD}{18}{subsection.3.3.1}%
+\contentsline {subsection}{\numberline {3.3.2}Level 1 DFD}{19}{subsection.3.3.2}%
+\contentsline {section}{\numberline {3.4}Database Design}{19}{section.3.4}%
+\contentsline {subsection}{\numberline {3.4.1}Configuration Database}{19}{subsection.3.4.1}%
+\contentsline {subsection}{\numberline {3.4.2}Data Models}{20}{subsection.3.4.2}%
+\contentsline {subsubsection}{Vulnerability Model}{20}{section*.18}%
+\contentsline {subsubsection}{Host Information Model}{20}{section*.19}%
+\contentsline {section}{\numberline {3.5}Algorithm Design}{20}{section.3.5}%
+\contentsline {subsection}{\numberline {3.5.1}Vulnerability Classification Algorithm}{20}{subsection.3.5.1}%
+\contentsline {subsection}{\numberline {3.5.2}Threat Analysis Algorithm}{20}{subsection.3.5.2}%
+\contentsline {chapter}{\numberline {4}Implementation}{21}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Technology Stack}{21}{section.4.1}%
+\contentsline {subsection}{\numberline {4.1.1}Programming Language}{21}{subsection.4.1.1}%
+\contentsline {subsection}{\numberline {4.1.2}Core Libraries}{21}{subsection.4.1.2}%
+\contentsline {subsubsection}{Click}{21}{section*.20}%
+\contentsline {subsubsection}{Scikit-learn}{21}{section*.21}%
+\contentsline {subsubsection}{Requests and BeautifulSoup}{22}{section*.22}%
+\contentsline {section}{\numberline {4.2}Module Implementation}{22}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}CLI Module}{22}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.2.2}Network Scanner Implementation}{23}{subsection.4.2.2}%
+\contentsline {subsection}{\numberline {4.2.3}Web Scanner Implementation}{24}{subsection.4.2.3}%
+\contentsline {subsection}{\numberline {4.2.4}AI Engine Implementation}{26}{subsection.4.2.4}%
+\contentsline {subsection}{\numberline {4.2.5}Reporting Module Implementation}{28}{subsection.4.2.5}%
+\contentsline {section}{\numberline {4.3}Configuration Management}{30}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}Configuration Files}{30}{subsection.4.3.1}%
+\contentsline {subsection}{\numberline {4.3.2}Scan Profiles}{30}{subsection.4.3.2}%
+\contentsline {section}{\numberline {4.4}Testing Framework}{31}{section.4.4}%
+\contentsline {subsection}{\numberline {4.4.1}Unit Tests}{31}{subsection.4.4.1}%
+\contentsline {subsection}{\numberline {4.4.2}Integration Tests}{32}{subsection.4.4.2}%
+\contentsline {chapter}{\numberline {5}Testing and Results}{34}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Testing Methodology}{34}{section.5.1}%
+\contentsline {subsection}{\numberline {5.1.1}Unit Testing}{34}{subsection.5.1.1}%
+\contentsline {subsubsection}{Test Coverage}{34}{section*.23}%
+\contentsline {subsubsection}{Test Results}{34}{section*.24}%
+\contentsline {subsection}{\numberline {5.1.2}Integration Testing}{35}{subsection.5.1.2}%
+\contentsline {subsubsection}{Test Scenarios}{35}{section*.25}%
+\contentsline {subsubsection}{Integration Test Results}{35}{section*.26}%
+\contentsline {subsection}{\numberline {5.1.3}Performance Testing}{35}{subsection.5.1.3}%
+\contentsline {subsubsection}{Scan Performance}{35}{section*.27}%
+\contentsline {subsubsection}{Memory Usage}{35}{section*.28}%
+\contentsline {section}{\numberline {5.2}Validation Results}{36}{section.5.2}%
+\contentsline {subsection}{\numberline {5.2.1}Accuracy Testing}{36}{subsection.5.2.1}%
+\contentsline {subsubsection}{Test Environment}{36}{section*.29}%
+\contentsline {subsubsection}{Detection Accuracy}{36}{section*.30}%
+\contentsline {subsection}{\numberline {5.2.2}AI Classification Validation}{36}{subsection.5.2.2}%
+\contentsline {subsubsection}{Classification Accuracy}{36}{section*.31}%
+\contentsline {section}{\numberline {5.3}Sample Test Outputs}{36}{section.5.3}%
+\contentsline {subsection}{\numberline {5.3.1}Network Scan Output}{36}{subsection.5.3.1}%
+\contentsline {subsection}{\numberline {5.3.2}Web Scan Output}{37}{subsection.5.3.2}%
+\contentsline {subsection}{\numberline {5.3.3}Report Generation Output}{38}{subsection.5.3.3}%
+\contentsline {section}{\numberline {5.4}User Acceptance Testing}{38}{section.5.4}%
+\contentsline {subsection}{\numberline {5.4.1}Usability Evaluation}{38}{subsection.5.4.1}%
+\contentsline {subsubsection}{User Feedback}{38}{section*.32}%
+\contentsline {subsubsection}{Usability Score}{39}{section*.33}%
+\contentsline {section}{\numberline {5.5}Limitations and Future Improvements}{39}{section.5.5}%
+\contentsline {subsection}{\numberline {5.5.1}Current Limitations}{39}{subsection.5.5.1}%
+\contentsline {subsection}{\numberline {5.5.2}Recommended Improvements}{39}{subsection.5.5.2}%
+\contentsline {chapter}{\numberline {6}Conclusion}{40}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Project Summary}{40}{section.6.1}%
+\contentsline {subsection}{\numberline {6.1.1}Achievements}{40}{subsection.6.1.1}%
+\contentsline {subsection}{\numberline {6.1.2}Technical Contributions}{40}{subsection.6.1.2}%
+\contentsline {section}{\numberline {6.2}Lessons Learned}{41}{section.6.2}%
+\contentsline {subsection}{\numberline {6.2.1}Technical Lessons}{41}{subsection.6.2.1}%
+\contentsline {subsection}{\numberline {6.2.2}Project Management Lessons}{41}{subsection.6.2.2}%
+\contentsline {section}{\numberline {6.3}Future Work}{41}{section.6.3}%
+\contentsline {subsection}{\numberline {6.3.1}Short-term Enhancements}{41}{subsection.6.3.1}%
+\contentsline {subsection}{\numberline {6.3.2}Long-term Vision}{41}{subsection.6.3.2}%
+\contentsline {subsection}{\numberline {6.3.3}Research Directions}{41}{subsection.6.3.3}%
+\contentsline {section}{\numberline {6.4}Impact and Applications}{42}{section.6.4}%
+\contentsline {subsection}{\numberline {6.4.1}Security Community Impact}{42}{subsection.6.4.1}%
+\contentsline {subsection}{\numberline {6.4.2}Practical Applications}{42}{subsection.6.4.2}%
+\contentsline {section}{\numberline {6.5}Final Remarks}{42}{section.6.5}%
+\contentsline {chapter}{References}{43}{section.6.5}%
+\contentsline {chapter}{\numberline {A}Source Code}{44}{appendix.A}%
+\contentsline {section}{\numberline {A.1}Core Modules}{44}{section.A.1}%
+\contentsline {subsection}{\numberline {A.1.1}CLI Module}{44}{subsection.A.1.1}%
+\contentsline {subsection}{\numberline {A.1.2}Network Scanner Module}{46}{subsection.A.1.2}%
+\contentsline {chapter}{\numberline {B}Installation Guide}{51}{appendix.B}%
+\contentsline {section}{\numberline {B.1}System Requirements}{51}{section.B.1}%
+\contentsline {subsection}{\numberline {B.1.1}Hardware Requirements}{51}{subsection.B.1.1}%
+\contentsline {subsection}{\numberline {B.1.2}Software Requirements}{51}{subsection.B.1.2}%
+\contentsline {subsubsection}{Operating System}{51}{section*.34}%
+\contentsline {subsubsection}{Required Software}{51}{section*.35}%
+\contentsline {section}{\numberline {B.2}Installation Methods}{51}{section.B.2}%
+\contentsline {subsection}{\numberline {B.2.1}Automated Installation}{51}{subsection.B.2.1}%
+\contentsline {subsubsection}{Step 1: Download the Repository}{52}{section*.36}%
+\contentsline {subsubsection}{Step 2: Run the Installation Script}{52}{section*.37}%
+\contentsline {subsubsection}{Step 3: Verify Installation}{52}{section*.38}%
+\contentsline {subsection}{\numberline {B.2.2}Manual Installation}{52}{subsection.B.2.2}%
+\contentsline {subsubsection}{Step 1: Create Virtual Environment}{52}{section*.39}%
+\contentsline {subsubsection}{Step 2: Install Dependencies}{53}{section*.40}%
+\contentsline {subsubsection}{Step 3: Set Up Configuration}{53}{section*.41}%
+\contentsline {section}{\numberline {B.3}Configuration}{53}{section.B.3}%
+\contentsline {subsection}{\numberline {B.3.1}Basic Configuration}{53}{subsection.B.3.1}%
+\contentsline {subsubsection}{Editing the Main Configuration}{53}{section*.42}%
+\contentsline {subsubsection}{Scan Profiles}{54}{section*.43}%
+\contentsline {section}{\numberline {B.4}Troubleshooting}{54}{section.B.4}%
+\contentsline {subsection}{\numberline {B.4.1}Common Installation Issues}{54}{subsection.B.4.1}%
+\contentsline {subsubsection}{Permission Errors}{54}{section*.44}%
+\contentsline {subsubsection}{Python Version Issues}{55}{section*.45}%
+\contentsline {subsubsection}{Virtual Environment Issues}{55}{section*.46}%
+\contentsline {subsection}{\numberline {B.4.2}Runtime Issues}{55}{subsection.B.4.2}%
+\contentsline {subsubsection}{Import Errors}{55}{section*.47}%
+\contentsline {subsubsection}{Network Connectivity Issues}{55}{section*.48}%
+\contentsline {subsubsection}{Performance Issues}{55}{section*.49}%
+\contentsline {section}{\numberline {B.5}Uninstallation}{56}{section.B.5}%
+\contentsline {chapter}{\numberline {C}User Manual}{57}{appendix.C}%
+\contentsline {section}{\numberline {C.1}Getting Started}{57}{section.C.1}%
+\contentsline {subsection}{\numberline {C.1.1}First Scan}{57}{subsection.C.1.1}%
+\contentsline {subsubsection}{Network Scan}{57}{section*.50}%
+\contentsline {subsubsection}{Web Application Scan}{57}{section*.51}%
+\contentsline {subsubsection}{DNS Enumeration}{57}{section*.52}%
+\contentsline {subsubsection}{Full Penetration Test}{58}{section*.53}%
+\contentsline {section}{\numberline {C.2}Command Reference}{58}{section.C.2}%
+\contentsline {subsection}{\numberline {C.2.1}Scan Command}{58}{subsection.C.2.1}%
+\contentsline {subsubsection}{Syntax}{58}{section*.54}%
+\contentsline {subsubsection}{Options}{58}{section*.55}%
+\contentsline {subsubsection}{Examples}{58}{section*.56}%
+\contentsline {subsection}{\numberline {C.2.2}Enumerate Command}{58}{subsection.C.2.2}%
+\contentsline {subsubsection}{Syntax}{59}{section*.57}%
+\contentsline {subsubsection}{Options}{59}{section*.58}%
+\contentsline {subsubsection}{Examples}{59}{section*.59}%
+\contentsline {subsection}{\numberline {C.2.3}Config Command}{59}{subsection.C.2.3}%
+\contentsline {subsubsection}{Syntax}{59}{section*.60}%
+\contentsline {subsubsection}{Example Output}{59}{section*.61}%
+\contentsline {section}{\numberline {C.3}Output Interpretation}{60}{section.C.3}%
+\contentsline {subsection}{\numberline {C.3.1}Network Scan Results}{60}{subsection.C.3.1}%
+\contentsline {subsubsection}{Sample Output}{60}{section*.62}%
+\contentsline {subsubsection}{Interpretation}{60}{section*.63}%
+\contentsline {subsection}{\numberline {C.3.2}Web Scan Results}{60}{subsection.C.3.2}%
+\contentsline {subsubsection}{Sample Output}{60}{section*.64}%
+\contentsline {subsubsection}{Interpretation}{60}{section*.65}%
+\contentsline {subsection}{\numberline {C.3.3}DNS Enumeration Results}{61}{subsection.C.3.3}%
+\contentsline {subsubsection}{Sample Output}{61}{section*.66}%
+\contentsline {subsubsection}{Interpretation}{61}{section*.67}%
+\contentsline {section}{\numberline {C.4}Report Analysis}{61}{section.C.4}%
+\contentsline {subsection}{\numberline {C.4.1}HTML Reports}{61}{subsection.C.4.1}%
+\contentsline {subsubsection}{Report Sections}{62}{section*.68}%
+\contentsline {subsubsection}{Report Features}{62}{section*.69}%
+\contentsline {subsection}{\numberline {C.4.2}JSON Reports}{62}{subsection.C.4.2}%
+\contentsline {subsubsection}{JSON Structure}{62}{section*.70}%
+\contentsline {subsubsection}{Usage}{63}{section*.71}%
+\contentsline {chapter}{\numberline {D}Sample Reports}{64}{appendix.D}%
+\contentsline {section}{\numberline {D.1}Network Scan Report}{64}{section.D.1}%
+\contentsline {subsection}{\numberline {D.1.1}Executive Summary}{64}{subsection.D.1.1}%
+\contentsline {subsection}{\numberline {D.1.2}Scan Details}{64}{subsection.D.1.2}%
+\contentsline {subsection}{\numberline {D.1.3}Hosts Discovered}{64}{subsection.D.1.3}%
+\contentsline {subsection}{\numberline {D.1.4}Detailed Port Analysis}{65}{subsection.D.1.4}%
+\contentsline {subsubsection}{Web Server (192.168.1.100)}{65}{section*.72}%
+\contentsline {subsection}{\numberline {D.1.5}Vulnerability Assessment}{65}{subsection.D.1.5}%
+\contentsline {subsubsection}{Critical Findings}{65}{section*.73}%
+\contentsline {subsubsection}{Recommendations}{65}{section*.74}%
+\contentsline {subsection}{\numberline {D.1.6}Statistics}{66}{subsection.D.1.6}%
+\contentsline {section}{\numberline {D.2}Web Application Scan Report}{66}{section.D.2}%
+\contentsline {subsection}{\numberline {D.2.1}Executive Summary}{66}{subsection.D.2.1}%
+\contentsline {subsection}{\numberline {D.2.2}Scan Configuration}{66}{subsection.D.2.2}%
+\contentsline {subsection}{\numberline {D.2.3}Security Headers Analysis}{66}{subsection.D.2.3}%
+\contentsline {subsection}{\numberline {D.2.4}Vulnerabilities Found}{67}{subsection.D.2.4}%
+\contentsline {subsubsection}{High Severity}{67}{section*.75}%
+\contentsline {subsubsection}{Medium Severity}{67}{section*.76}%
+\contentsline {subsection}{\numberline {D.2.5}SSL/TLS Assessment}{67}{subsection.D.2.5}%
+\contentsline {subsection}{\numberline {D.2.6}Risk Assessment}{68}{subsection.D.2.6}%
+\contentsline {subsection}{\numberline {D.2.7}Recommendations}{68}{subsection.D.2.7}%
+\contentsline {subsubsection}{Immediate Actions}{68}{section*.77}%
+\contentsline {subsubsection}{Long-term Improvements}{68}{section*.78}%
+\contentsline {section}{\numberline {D.3}DNS Enumeration Report}{68}{section.D.3}%
+\contentsline {subsection}{\numberline {D.3.1}Executive Summary}{68}{subsection.D.3.1}%
+\contentsline {subsection}{\numberline {D.3.2}DNS Records Discovered}{69}{subsection.D.3.2}%
+\contentsline {subsection}{\numberline {D.3.3}Subdomains Found}{69}{subsection.D.3.3}%
+\contentsline {subsection}{\numberline {D.3.4}Security Assessment}{69}{subsection.D.3.4}%
+\contentsline {subsubsection}{Vulnerabilities Identified}{69}{section*.79}%
+\contentsline {subsection}{\numberline {D.3.5}Recommendations}{70}{subsection.D.3.5}%

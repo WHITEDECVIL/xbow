@@ -1,0 +1,211 @@
+╔════════════════════════════════════════════════════════════════════════════╗
+║                                                                            ║
+║                   XBOW - QUICK START GUIDE (5 minutes)                    ║
+║                                                                            ║
+║                  Professional AI Penetration Testing Tool                 ║
+║                                                                            ║
+╚════════════════════════════════════════════════════════════════════════════╝
+
+🚀 STEP 1: AUTOMATIC INSTALLATION (2 minutes)
+═══════════════════════════════════════════════════════════════════════════
+
+Run this command:
+  
+  bash /home/samurai/Documents/XBOW/install.sh
+
+This will:
+  ✓ Check Python version (3.9+)
+  ✓ Install system dependencies (nmap, dnsutils)
+  ✓ Create virtual environment
+  ✓ Install Python packages
+  ✓ Setup XBOW framework
+
+═══════════════════════════════════════════════════════════════════════════
+
+📋 STEP 2: VERIFY INSTALLATION (1 minute)
+═══════════════════════════════════════════════════════════════════════════
+
+cd /home/samurai/Documents/XBOW
+source venv/bin/activate
+xbow --help
+
+You should see XBOW help output with available commands.
+
+═══════════════════════════════════════════════════════════════════════════
+
+💻 STEP 3: RUN YOUR FIRST SCAN (2 minutes)
+═══════════════════════════════════════════════════════════════════════════
+
+Try a quick web scan:
+
+  xbow scan --target https://scanme.nmap.org --scan-type network
+
+Or scan a local test:
+
+  xbow scan --target localhost --scan-type network --ports 22,80,443
+
+═══════════════════════════════════════════════════════════════════════════
+
+📊 COMMON COMMANDS
+═══════════════════════════════════════════════════════════════════════════
+
+Network Scanning:
+  xbow scan --target 192.168.1.0/24 --scan-type network
+
+Web Application Scan:
+  xbow scan --target https://example.com --scan-type web
+
+DNS Enumeration:
+  xbow enumerate --target example.com
+
+Full Penetration Test:
+  xbow scan --target example.com --scan-type full --generate-report
+
+Live Interactive Pentesting:
+  xbow live --target https://example.com --mode interactive
+
+Real-time Monitoring:
+  xbow live --target https://example.com --mode monitor --duration 600
+
+Comprehensive Pentest:
+  xbow pentest --target example.com --profile aggressive
+
+# AI automated pentesting
+python -m xbow live --target https://example.com --mode auto --duration 300
+
+View Configuration:
+  xbow config
+
+═══════════════════════════════════════════════════════════════════════════
+
+📚 LEARN MORE
+═══════════════════════════════════════════════════════════════════════════
+
+Read the documentation:
+
+  1. docs/COMPLETE_SETUP_GUIDE.md - Full setup and usage guide
+  2. docs/GETTING_STARTED.md - Installation and basics
+  3. docs/EXAMPLES.md - Real-world usage examples
+  4. docs/FEATURES.md - Complete feature list (170+)
+  5. docs/ARCHITECTURE.md - System design details
+
+═══════════════════════════════════════════════════════════════════════════
+
+🔍 EXAMPLE: WEB VULNERABILITY SCAN WITH REPORT
+═══════════════════════════════════════════════════════════════════════════
+
+Run this:
+
+  xbow scan --target https://example.com \
+    --scan-type web \
+    --depth 2 \
+    --threads 4 \
+    --generate-report
+
+This will:
+  ✓ Analyze security headers
+  ✓ Test for injection vulnerabilities
+  ✓ Crawl the website
+  ✓ Check SSL/TLS configuration
+  ✓ Generate HTML report
+  ✓ Export JSON data
+
+Results saved to: results/ directory
+
+═══════════════════════════════════════════════════════════════════════════
+
+⚙️ CUSTOMIZE BEHAVIOR
+═══════════════════════════════════════════════════════════════════════════
+
+Edit config/xbow.json to change:
+  - Scan timeout (default: 30s)
+  - Thread count (default: 4)
+  - Port ranges
+  - Log level
+  - Output directory
+
+Use scan profiles:
+  xbow scan --target example.com --profile quick       # Fast
+  xbow scan --target example.com --profile standard    # Balanced
+  xbow scan --target example.com --profile aggressive  # Comprehensive
+
+═══════════════════════════════════════════════════════════════════════════
+
+🐛 TROUBLESHOOTING
+═══════════════════════════════════════════════════════════════════════════
+
+"nmap not found":
+  sudo apt-get install nmap        # Linux
+  brew install nmap                # macOS
+
+"Connection refused":
+  - Check target is online: ping example.com
+  - Try HTTP: xbow scan --target http://example.com
+
+Slow scanning:
+  - Use quick profile: --profile quick
+  - Reduce port range: --ports 1-100
+
+═══════════════════════════════════════════════════════════════════════════
+
+✨ FEATURES SUMMARY
+═══════════════════════════════════════════════════════════════════════════
+
+✓ Network Scanning
+  - Ping sweep host discovery
+  - Port enumeration
+  - Service detection
+  - OS fingerprinting
+
+✓ Web Vulnerability Scanning
+  - Security header analysis
+  - Injection testing
+  - Website crawling
+  - SSL/TLS validation
+
+✓ DNS Enumeration
+  - Record enumeration
+  - Subdomain discovery
+  - Zone transfer detection
+  - DNSSEC validation
+
+✓ AI/ML Analysis
+  - Severity prediction
+  - Vulnerability classification
+  - Risk assessment
+  - Impact analysis
+
+✓ Professional Reporting
+  - Beautiful HTML reports
+  - Machine-readable JSON
+  - Executive summaries
+  - Remediation recommendations
+
+═══════════════════════════════════════════════════════════════════════════
+
+⚖️ LEGAL NOTICE
+═══════════════════════════════════════════════════════════════════════════
+
+⚠️ IMPORTANT:
+  - Only use for authorized security testing
+  - Obtain written permission before scanning
+  - Unauthorized access is illegal
+  - Use ethically and responsibly
+
+═══════════════════════════════════════════════════════════════════════════
+
+🎉 YOU'RE READY!
+═══════════════════════════════════════════════════════════════════════════
+
+Your professional penetration testing framework is installed and ready!
+
+Next step:
+  1. cd /home/samurai/Documents/XBOW
+  2. source venv/bin/activate
+  3. xbow scan --target scanme.nmap.org --scan-type network
+
+Enjoy! 🔒
+
+═══════════════════════════════════════════════════════════════════════════
+XBOW Framework v1.0.0 | Production Ready | January 2024
+═══════════════════════════════════════════════════════════════════════════

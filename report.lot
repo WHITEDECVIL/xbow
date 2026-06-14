@@ -1,0 +1,29 @@
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {5.1}{\ignorespaces Unit Test Results}}{34}{table.5.1}%
+\contentsline {table}{\numberline {5.2}{\ignorespaces Integration Test Results}}{35}{table.5.2}%
+\contentsline {table}{\numberline {5.3}{\ignorespaces Scan Performance Results}}{35}{table.5.3}%
+\contentsline {table}{\numberline {5.4}{\ignorespaces Memory Usage Statistics}}{35}{table.5.4}%
+\contentsline {table}{\numberline {5.5}{\ignorespaces Vulnerability Detection Accuracy}}{36}{table.5.5}%
+\contentsline {table}{\numberline {5.6}{\ignorespaces AI Classification Accuracy}}{36}{table.5.6}%
+\contentsline {table}{\numberline {5.7}{\ignorespaces Usability Evaluation Scores}}{39}{table.5.7}%
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {C.1}{\ignorespaces Scan Command Options}}{58}{table.C.1}%
+\contentsline {table}{\numberline {C.2}{\ignorespaces Enumerate Command Options}}{59}{table.C.2}%
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {D.1}{\ignorespaces Scan Configuration}}{64}{table.D.1}%
+\contentsline {table}{\numberline {D.2}{\ignorespaces Discovered Hosts}}{64}{table.D.2}%
+\contentsline {table}{\numberline {D.3}{\ignorespaces Web Server Ports}}{65}{table.D.3}%
+\contentsline {table}{\numberline {D.4}{\ignorespaces Scan Statistics}}{66}{table.D.4}%
+\contentsline {table}{\numberline {D.5}{\ignorespaces Web Scan Configuration}}{66}{table.D.5}%
+\contentsline {table}{\numberline {D.6}{\ignorespaces Security Headers Assessment}}{66}{table.D.6}%
+\contentsline {table}{\numberline {D.7}{\ignorespaces SSL/TLS Configuration}}{67}{table.D.7}%
+\contentsline {table}{\numberline {D.8}{\ignorespaces Vulnerability Severity Breakdown}}{68}{table.D.8}%
+\contentsline {table}{\numberline {D.9}{\ignorespaces DNS Records}}{69}{table.D.9}%
+\contentsline {table}{\numberline {D.10}{\ignorespaces Discovered Subdomains}}{69}{table.D.10}%
