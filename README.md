@@ -1,178 +1,362 @@
-# XBOW AI Penetration Testing Tool
+<div align="center">
 
-A professional-grade, AI-powered penetration testing framework with advanced vulnerability detection, automated scanning, and intelligent reporting.
+<!-- Banner -->
+<img width="100%" src="https://capsule-render.vercel.app/api?type=venom&color=0:0d1117,50:003300,100:00ff41&height=200&section=header&text=XBOW&fontSize=90&fontColor=00ff41&fontAlignY=55&desc=AI-Powered%20Penetration%20Testing%20Framework&descSize=18&descAlignY=75&descColor=ffffff&animation=twinkling" />
 
-## Features
+<!-- Badges Row 1 -->
+<br/>
 
-- **Network Scanning**: Advanced host discovery and port scanning
-- **Web Vulnerability Scanning**: Web application security testing
-- **DNS Enumeration**: Subdomain discovery and DNS reconnaissance
-- **Live Penetration Testing**: Interactive shell and real-time monitoring
-- **Comprehensive Pentesting**: Full penetration testing workflows
-- **Vulnerability Database**: Integrated CVE and known vulnerability detection
-- **AI/ML Analysis**: Machine learning-based vulnerability classification and severity prediction
-- **Report Generation**: Professional HTML and PDF reports
-- **Multi-Protocol Support**: TCP, UDP, HTTP/HTTPS, DNS
-- **Automated Exploitation Framework**: Basic exploitation for confirmed vulnerabilities
-- **Real-time Logging**: Comprehensive audit trails and logging
-- **Configuration Profiles**: Predefined and custom scan profiles
+![Python](https://img.shields.io/badge/Python-3.9+-00ff41?style=for-the-badge&logo=python&logoColor=00ff41&labelColor=0d1117)
+![AI Powered](https://img.shields.io/badge/AI-Powered-00ff41?style=for-the-badge&logo=openai&logoColor=00ff41&labelColor=0d1117)
+![License](https://img.shields.io/badge/License-Proprietary-red?style=for-the-badge&labelColor=0d1117)
+![Platform](https://img.shields.io/badge/Platform-Linux%20|%20Kali-00ff41?style=for-the-badge&logo=linux&logoColor=00ff41&labelColor=0d1117)
 
-## Installation
+<!-- Badges Row 2 -->
+
+![Stars](https://img.shields.io/github/stars/WHITEDECVIL/XBOW?style=for-the-badge&logo=github&color=00ff41&labelColor=0d1117)
+![Issues](https://img.shields.io/github/issues/WHITEDECVIL/XBOW?style=for-the-badge&color=ff4444&labelColor=0d1117)
+![Last Commit](https://img.shields.io/github/last-commit/WHITEDECVIL/XBOW?style=for-the-badge&color=00ff41&labelColor=0d1117)
+![Repo Size](https://img.shields.io/github/repo-size/WHITEDECVIL/XBOW?style=for-the-badge&color=00ff41&labelColor=0d1117)
+
+<br/>
+
+```
+██╗  ██╗██████╗  ██████╗ ██╗    ██╗
+╚██╗██╔╝██╔══██╗██╔═══██╗██║    ██║
+ ╚███╔╝ ██████╔╝██║   ██║██║ █╗ ██║
+ ██╔██╗ ██╔══██╗██║   ██║██║███╗██║
+██╔╝ ██╗██████╔╝╚██████╔╝╚███╔███╔╝
+╚═╝  ╚═╝╚═════╝  ╚═════╝  ╚══╝╚══╝
+   [ AI-Powered Penetration Testing ]
+```
+
+*"The quieter you become, the more vulnerabilities you hear."*
+
+</div>
+
+---
+
+<div align="center">
+
+## ⚡ What is XBOW?
+
+</div>
+
+**XBOW** is a professional-grade, AI-driven penetration testing framework built for **security researchers, red teamers, and bug bounty hunters**. It automates reconnaissance, vulnerability scanning, and exploitation workflows — with an intelligent ML layer that classifies and prioritizes threats in real time.
+
+> ⚠️ **Legal Notice:** This tool is strictly for **authorized security testing only**. Unauthorized use against systems you do not own or have explicit written permission to test is **illegal**. The author holds no responsibility for misuse.
+
+---
+
+## 🗂️ Table of Contents
+
+- [Features](#-features)
+- [Installation](#-installation)
+- [Quick Start](#-quick-start)
+- [Scan Modes](#-scan-modes)
+- [Live Interactive Shell](#-live-interactive-shell)
+- [AI Automated Mode](#-ai-automated-mode)
+- [Project Structure](#-project-structure)
+- [Architecture](#-architecture)
+- [Dependencies](#-dependencies)
+
+---
+
+## 🔥 Features
+
+<table>
+<tr>
+<td width="50%">
+
+**🌐 Scanning & Recon**
+- Advanced host discovery & port scanning
+- Web application vulnerability scanning
+- DNS enumeration & subdomain discovery
+- Multi-protocol: TCP, UDP, HTTP/HTTPS, DNS
+
+</td>
+<td width="50%">
+
+**🤖 AI & Intelligence**
+- ML-based vulnerability classification
+- Severity prediction & risk scoring
+- Adaptive scanning based on findings
+- External AI agent plugin support
+
+</td>
+</tr>
+<tr>
+<td width="50%">
+
+**💥 Exploitation**
+- Interactive real-time exploit shell
+- Safe-mode exploitation framework
+- nmap, sqlmap, nikto, dirb, metasploit integration
+- Session persistence with vuln ID tracking
+
+</td>
+<td width="50%">
+
+**📊 Reporting**
+- Professional HTML & PDF report generation
+- Integrated CVE & vulnerability database
+- Real-time logging & audit trails
+- Predefined & custom scan profiles
+
+</td>
+</tr>
+</table>
+
+---
+
+## 📦 Installation
 
 ```bash
+# Clone the repository
+git clone https://github.com/WHITEDECVIL/XBOW.git
+cd XBOW
 
-# Create virtual environment
+# Create and activate virtual environment
 python3 -m venv venv
 source venv/bin/activate
 
-# Install dependencies
+# Install all dependencies
 pip install -r requirements.txt
+
+# Verify installation
 python -m xbow --help
+```
 
+---
 
-
-## Quick Start
+## ⚡ Quick Start
 
 ```bash
-# Basic network scan
- xbow scan --target 192.168.1.0/24 --scan-type network
+# 🔍 Network scan
+xbow scan --target 192.168.1.0/24 --scan-type network
 
-# Web vulnerability scan
+# 🌐 Web vulnerability scan
 xbow scan --target https://example.com --scan-type web
 
-# Full penetration test
- xbow pentest --target example.com --profile aggressive --generate-report
+# 💣 Full penetration test with report
+xbow pentest --target example.com --profile aggressive --generate-report
 
-# Live interactive pentesting
- xbow live --target https://example.com --mode interactive
-
-# Real-time monitoring
-xbow live --target https://example.com --mode monitor --duration 600
-
-# AI automated pentesting
-xbow live --target https://example.com --mode auto --duration 300
-xbow live --target https://example.com --mode auto --enable-ai-agent --duration 300
-
-# DNS enumeration
+# 🔎 DNS enumeration
 xbow enumerate --target example.com
-```
 
-## Live Interactive Pentesting
-
-XBOW features a powerful interactive shell for real-time penetration testing:
-
-### Interactive Commands
-
-```bash
-# Start interactive session
-xbow live --target https://example.com --mode interactive
-
-# Available commands:
-scan web          # Scan for web vulnerabilities
-list              # List found vulnerabilities with IDs
-exploit 1         # Attempt exploitation of vulnerability ID 1
-nmap -p 80,443    # Run nmap scan
-sqlmap -u URL     # Run sqlmap injection test
-info              # Show target information
-help              # Show help
-quit              # Exit session
-```
-
-### Interactive Exploitation Features
-
-- **Session Persistence**: Vulnerabilities discovered during the session are tracked with unique IDs
-- **Safe Exploitation**: All exploitation attempts use safe mode to avoid actual damage
-- **Multi-Tool Integration**: Direct access to nmap, sqlmap, nikto, dirb, and metasploit
-- **Real-time Results**: Immediate feedback on scan and exploitation results
-
-### AI Automated Mode
-
-The AI automated mode uses intelligent decision-making to perform comprehensive pentesting:
-
-```bash
-# AI-driven automated pentesting
+# 🤖 AI automated pentesting
 xbow live --target https://example.com --mode auto --duration 300
+
+# 🧠 AI agent-assisted pentesting
+xbow live --target https://example.com --mode auto --enable-ai-agent --duration 300
 ```
 
-**AI Features:**
-- **Intelligent Scanning**: Automatically chooses scan types based on findings
-- **Adaptive Exploitation**: Attempts exploitation of high-severity vulnerabilities
-- **Tool Integration**: Automatically runs nmap, sqlmap, and other tools when appropriate
-- **Decision Making**: AI analyzes results and decides next actions
-- **AI Agent Plugins**: External AI orchestration providers can be configured in `config/ai_agents.json`
-- **Comprehensive Reporting**: Generates detailed summary of all automated actions
+---
 
-## Project Structure
+## 🖥️ Scan Modes
+
+| Mode | Command | Description |
+|------|---------|-------------|
+| 🔍 **Network** | `--scan-type network` | Host discovery, port scanning |
+| 🌐 **Web** | `--scan-type web` | Web app vulnerability testing |
+| 🔎 **DNS** | `enumerate` | Subdomain & DNS reconnaissance |
+| 💬 **Interactive** | `--mode interactive` | Live shell with real-time results |
+| 👁️ **Monitor** | `--mode monitor` | Passive real-time monitoring |
+| 🤖 **Auto** | `--mode auto` | Full AI-driven automation |
+
+---
+
+## 🖥️ Live Interactive Shell
+
+Start a real-time hacking session with full shell access:
+
+```bash
+xbow live --target https://example.com --mode interactive
+```
+
+### Available Shell Commands
 
 ```
-xbow/
-├── src/
-│   ├── __init__.py
-│   ├── cli.py                 # Command-line interface
-│   ├── scanner/               # Core scanning modules
-│   │   ├── network.py
-│   │   ├── web.py
-│   │   ├── dns.py
-│   │   └── vulnerability.py
-│   ├── ai_engine/             # ML/AI analysis
-│   │   ├── classifier.py
-│   │   ├── predictor.py
-│   │   └── models/
-│   ├── exploits/              # Exploitation framework
-│   │   ├── __init__.py
+┌─[XBOW]─[interactive]─[target: example.com]
+│
+├── scan web          →  Scan for web vulnerabilities
+├── list              →  List found vulns with IDs
+├── exploit <id>      →  Attempt exploitation of vuln by ID
+├── nmap -p 80,443    →  Run nmap scan inline
+├── sqlmap -u <URL>   →  Run SQLMap injection test
+├── info              →  Show target information
+├── help              →  Show all available commands
+└── quit              →  Exit session
+```
+
+**Shell Features:**
+- 🔒 **Safe Exploitation** — all exploits run in safe mode, no actual damage
+- 🧩 **Session Persistence** — vulnerabilities tracked with unique IDs across the session
+- 🔧 **Multi-Tool Integration** — nmap, sqlmap, nikto, dirb, metasploit built-in
+- ⚡ **Real-time Feedback** — immediate results on every scan and exploit attempt
+
+---
+
+## 🤖 AI Automated Mode
+
+Let XBOW's intelligence layer drive the entire pentest:
+
+```bash
+xbow live --target https://example.com --mode auto --enable-ai-agent --duration 300
+```
+
+**How the AI decides:**
+
+```
+Target Discovered
+      │
+      ▼
+┌─────────────┐     ┌──────────────────┐     ┌────────────────────┐
+│  Port Scan  │────▶│  AI Classification│────▶│  Adaptive Scanning │
+└─────────────┘     └──────────────────┘     └────────────────────┘
+                                                        │
+                              ┌─────────────────────────┘
+                              ▼
+                   ┌─────────────────────┐     ┌──────────────────┐
+                   │ Vulnerability Found  │────▶│ Exploit Decision  │
+                   └─────────────────────┘     └──────────────────┘
+                                                        │
+                              ┌─────────────────────────┘
+                              ▼
+                   ┌─────────────────────┐
+                   │  Report Generation   │
+                   └─────────────────────┘
+```
+
+**AI Capabilities:**
+- 🧠 Intelligent scan-type selection based on live findings
+- 🎯 Prioritizes high-severity vulnerabilities for exploitation
+- 🔄 Iterative — re-scans based on what it discovers
+- 📋 Generates detailed automated action summary report
+
+---
+
+## 📁 Project Structure
+
+```
+XBOW/
+├── 📂 src/
+│   ├── 📄 __init__.py
+│   ├── 📄 cli.py                    # Command-line interface
+│   ├── 📂 scanner/                  # Core scanning engines
+│   │   ├── network.py               # Host & port discovery
+│   │   ├── web.py                   # Web vuln scanner
+│   │   ├── dns.py                   # DNS enumeration
+│   │   └── vulnerability.py         # CVE matching
+│   ├── 📂 ai_engine/                # ML/AI analysis layer
+│   │   ├── classifier.py            # Vulnerability classification
+│   │   ├── predictor.py             # Severity prediction
+│   │   └── models/                  # Trained ML models
+│   ├── 📂 exploits/                 # Exploitation framework
 │   │   ├── base.py
 │   │   └── payloads/
-│   ├── reporting/             # Report generation
+│   ├── 📂 reporting/                # Report generation
 │   │   ├── html_report.py
 │   │   ├── pdf_report.py
 │   │   └── templates/
-│   ├── utils/                 # Utility functions
+│   ├── 📂 utils/                    # Helpers & config
 │   │   ├── logger.py
 │   │   ├── config.py
 │   │   └── helpers.py
-│   └── database/              # Vulnerability DB
-├── config/                    # Configuration files
+│   └── 📂 database/                 # Vulnerability DB
+├── 📂 config/
 │   ├── xbow.cfg
 │   ├── profiles.json
 │   └── cve_database.json
-├── tests/                     # Unit tests
-├── docs/                      # Documentation
-├── requirements.txt
-├── setup.py
-└── LICENSE
+├── 📂 tests/
+├── 📂 docs/
+├── 📄 requirements.txt
+├── 📄 setup.py
+└── 📄 LICENSE
 ```
 
-## Architecture
+---
 
-XBOW uses a modular architecture:
+## 🏗️ Architecture
 
-1. **CLI Layer**: User interface and command handling
-2. **Scanning Layer**: Parallel scanning engines
-3. **Analysis Layer**: Data processing and correlation
-4. **AI Layer**: ML-based vulnerability classification
-5. **Exploitation Layer**: Safe exploitation testing
-6. **Reporting Layer**: Multi-format report generation
+```
+┌─────────────────────────────────────────────────────┐
+│                      CLI Layer                       │
+│           User Interface & Command Handling          │
+└──────────────────────┬──────────────────────────────┘
+                       │
+         ┌─────────────┼─────────────┐
+         ▼             ▼             ▼
+   ┌──────────┐  ┌──────────┐  ┌──────────┐
+   │ Scanning │  │  AI / ML │  │ Exploits │
+   │  Layer   │  │  Layer   │  │  Layer   │
+   └────┬─────┘  └────┬─────┘  └────┬─────┘
+        │              │              │
+        └──────────────┼──────────────┘
+                       ▼
+              ┌─────────────────┐
+              │  Reporting Layer │
+              │  HTML / PDF      │
+              └─────────────────┘
+```
 
-## Security Considerations
+---
 
-⚠️ **Legal Notice**: This tool is for authorized security testing only. Unauthorized access to computer systems is illegal. Always obtain written permission before conducting penetration tests.
+## 📚 Dependencies
 
-## Dependencies
+```bash
+# Core
+Python 3.9+
 
-- Python 3.9+
-- Network tools (nmap, masscan)
-- Machine Learning libraries (scikit-learn, TensorFlow)
-- Web scraping (Selenium, requests)
-- Report generation (Jinja2, WeasyPrint)
+# Network Tools (system)
+nmap
+masscan
 
-## Documentation
+# Python Packages
+scikit-learn        # ML classification
+tensorflow          # Deep learning models
+selenium            # Web automation
+requests            # HTTP client
+jinja2              # Report templating
+weasyprint          # PDF generation
+```
 
-See [docs/](docs/) for comprehensive documentation and examples.
+---
 
-## License
+## 📊 Language Breakdown
 
-Proprietary - XBOW Framework
+<div align="center">
 
-## Author
+![Python](https://img.shields.io/badge/Python-50.7%25-3776AB?style=for-the-badge&logo=python&logoColor=white&labelColor=0d1117)
+![TeX](https://img.shields.io/badge/TeX-47.8%25-008080?style=for-the-badge&logo=latex&logoColor=white&labelColor=0d1117)
+![Shell](https://img.shields.io/badge/Shell-1.1%25-4EAA25?style=for-the-badge&logo=gnubash&logoColor=white&labelColor=0d1117)
+![Makefile](https://img.shields.io/badge/Makefile-0.4%25-6D8086?style=for-the-badge&logo=cmake&logoColor=white&labelColor=0d1117)
 
-Advanced Penetration Testing Team
+</div>
+
+---
+
+## 👤 Author
+
+<div align="center">
+
+**Sanjay S** — *Cybersecurity Researcher & Red Teamer*
+
+[![GitHub](https://img.shields.io/badge/GitHub-WHITEDECVIL-181717?style=for-the-badge&logo=github&logoColor=white&labelColor=0d1117)](https://github.com/WHITEDECVIL)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Sanjay_S-0077B5?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=0d1117)](https://linkedin.com/in/sanjay-s)
+[![HackerOne](https://img.shields.io/badge/HackerOne-Profile-494649?style=for-the-badge&logo=hackerone&logoColor=white&labelColor=0d1117)](https://hackerone.com)
+[![Email](https://img.shields.io/badge/Email-sankicju@gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white&labelColor=0d1117)](mailto:sankicju@gmail.com)
+
+</div>
+
+---
+
+<div align="center">
+
+> **⚠️ Disclaimer:** XBOW is developed for **ethical and legal security research only**.
+> Always obtain **written authorization** before testing any system.
+> Misuse of this tool is a criminal offense.
+
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:00ff41,100:003300&height=100&section=footer" />
+
+</div>
